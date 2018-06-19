@@ -5,7 +5,7 @@ import YourRecipes from "./YourRecipes";
 class Index extends Component {
   render(){
     return(
-      <div>
+      <div className="fridge">
         <YourFridge/>
         <YourRecipes/>
       </div>
