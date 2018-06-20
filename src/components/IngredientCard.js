@@ -1,21 +1,28 @@
 import React from 'react';
-import { Card, Icon, Image } from 'semantic-ui-react'
 
-const IngredientCard = () => (
-  <Card className="ingredient-card">
-    <Image src='/assets/images/avatar/large/daniel.jpg' />
-    <Card.Content>
-      <Card.Header>Daniel</Card.Header>
-      <Card.Meta>Joined in 2016</Card.Meta>
-      <Card.Description>Daniel is a comedian living in Nashville.</Card.Description>
-    </Card.Content>
-    <Card.Content extra>
-      <a>
-        <Icon name='user' />
-        10 Friends
-      </a>
-    </Card.Content>
-  </Card>
-)
+const IngredientCard = () => {
+  return(
+    <div class="ui special cards">
+      <div class="card">
+        <div class="blurring dimmable image">
+          <div class="ui dimmer">
+            <div class="content">
+              <div class="center">
+                <div class="ui inverted button">Add</div>
+              </div>
+            </div>
+          </div>
+          <img src="/images/avatar/large/elliot.jpg" alt=""/>
+        </div>
+        <div class="content">
+          <a class="header">Team Fu</a>
+          <div class="meta">
+            <span class="date">Created in Sep 2014</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
 
 export default IngredientCard;
