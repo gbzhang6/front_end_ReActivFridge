@@ -5,8 +5,8 @@ class YourRecipes extends Component {
   render(){
     return(
       <div>
-        Recipes
-        < RecipeCard />
+        <h2>Recipes</h2>
+        <RecipeCard />
       </div>
     )
   }

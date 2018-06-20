@@ -4,22 +4,9 @@
 
 .Fridge-logo {
   position: relative;
-  animation: App-logo infinite 20s linear;
+  animation: App-logo-spin infinite 20s linear;
   height: 120px;
 }
-
-.ingredient-card {
-  margin: 20px;
-  border: 1px solid blue;
-  border-radius: 10%;
-}
-
-.fridge {
-  margin: 20px;
-  border: 1px solid grey;
-  border-radius: 10%;
-}
-
 
 .App-header {
   background-color: #A9A9A9;

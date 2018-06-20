@@ -6,14 +6,15 @@ const URL = "http://localhost:3000/api/v1/ingredients";
 class Index extends Component {
   state = {
     ingredients: [],
+    yourIngredients: [],
   }
 
   componentDidMount() {
     fetch(URL)
     .then(response => response.json())
-    .then(data => this.setState(
+    .then(ingredients => this.setState(
       {
-        ingredients: data
+        ingredients
       }
     )
   )}
