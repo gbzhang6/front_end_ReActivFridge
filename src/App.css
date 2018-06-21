@@ -8,9 +8,13 @@
   height: 120px;
 }
 
+.Find-recipes {
+  position: left;
+}
+
 .App-header {
   background-color: #A9A9A9;
-  height: 150px;
+  height: 200px;
   padding: 20px;
   color: white;
 }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import fridge from './fridge_closed.svg';
 import './App.css';
 import Index from "./containers/Index";
@@ -9,8 +8,8 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+          <h1>Welcome to reActivFridge</h1>
           <img src={fridge} className="Fridge-logo" alt="fridge logo" />
-          <h1 className="App-title">Welcome to reActivFridge</h1>
         </header>
         < Index />
       </div>

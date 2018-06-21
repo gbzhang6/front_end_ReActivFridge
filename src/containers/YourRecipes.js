@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import RecipeCard from '../components/RecipeCard'
+import { Card } from 'semantic-ui-react';
 
 class YourRecipes extends Component {
   render(){
