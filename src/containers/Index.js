@@ -8,6 +8,7 @@ class Index extends Component {
   state = {
     ingredients: [],
     selectedIngredients: [],
+    recipes: {},
   }
 
   componentDidMount() {
@@ -27,16 +28,16 @@ class Index extends Component {
   }
 
   handleFindRecipeClick = (selectedIngredients) => {
-    console.log("inside finding recipe", selectedIngredients)
-
     fetch(URL2 + this.state.selectedIngredients.join('%20'))
     .then(response => response.json())
-    .then(recipes => console.log("recipes", recipes))
-
+    .then(recipes => this.setState(
+      {
+        recipes
+      })
+    )
   }
 
   render(){
-    console.log("selectedIngredients:", this.state.selectedIngredients)
     const tempIngredients = this.state.ingredients.slice(0,20)
     return(
       <div className="fridge">
@@ -46,7 +47,7 @@ class Index extends Component {
           handleClick={this.handleClick}
           handleFindRecipeClick={this.handleFindRecipeClick}
           />
-        <YourRecipes/>
+        <YourRecipes recipes={this.state.recipes}/>
       </div>
     )
   }
