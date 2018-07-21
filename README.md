@@ -1,6 +1,6 @@
 # ReActiv Fridge
 
-![Playbook Opening Sequnece](https://media.giphy.com/media/2gVZiyyHbTsy6XLSh6/giphy.gif)
+![ReActiv Fridge Opening Sequnece](./reactivFridge.gif)
 
 A leftover repurposing tool to build recipes from ingredients in your fridge. Users can select as many ingredients from their refrigerator as they desire and view recipe cards that utilize all selected ingredients.
 
