@@ -3,9 +3,9 @@ import RecipeCard from '../components/RecipeCard'
 import { Grid, Button, Segment } from 'semantic-ui-react';
 
 class YourRecipes extends Component {
-
   render(){
-    const allRecipes = () => this.props.recipes.matches.map(recipe => <RecipeCard key={recipe.id} recipe={recipe} />)
+    console.log("Your Recipes", this.props.recipeDetail)
+    const allRecipes = () => this.props.recipes.matches.map(recipe => <RecipeCard key={recipe.id} recipe={recipe} recipeDetail={this.props.recipeDetail} detailClick={this.props.handleRecipeDetailClick} />)
 
     const hasThings = this.props.recipes.matches
 

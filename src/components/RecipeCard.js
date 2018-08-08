@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Button, Dimmer, Header, Image } from 'semantic-ui-react'
+import RecipeDetail from './RecipeDetail'
 
 class RecipeCard extends Component {
   state = {}
@@ -8,13 +9,23 @@ class RecipeCard extends Component {
   handleHide = () => this.setState({ active: false })
 
   render() {
+
+    /* !this.state.userIngredients.includes(item) ? <button> : <Ingredients>
+
+    {!this.props.recipeDetail.includes(this.props.recipe) ?
+      <Button primary onClick={()=>this.props.detailClick(this.props.recipe)}>See Recipe</Button>
+      :
+      <RecipeDetail recipeDetail={this.props.recipeDetail} />
+      }
+    */
+
     const { active } = this.state
     const content = (
       <div>
         <Header as='h2' inverted>
           {this.props.recipe.recipeName}
         </Header>
-          <Button primary onClick={()=>this.props.handleClick(this.props.recipe.recipeName)}>See Recipe</Button>
+          <Button primary onClick={()=>this.props.detailClick(this.props.recipe)}>See Recipe</Button>
       </div>
     )
 
