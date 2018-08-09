@@ -22,6 +22,10 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
+"@types/jest@^23.0.0":
+  version "23.3.1"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.3.1.tgz#a4319aedb071d478e6f407d1c4578ec8156829cf"
+
 "@types/node@*":
   version "10.5.7"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.5.7.tgz#960d9feb3ade2233bcc9843c918d740b4f78a7cf"
@@ -381,6 +385,13 @@ aws-sign2@~0.7.0:
 aws4@^1.6.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.8.0.tgz#f0e003d9ca9e7f59c7a508945d7b2ef9a04a542f"
+
+axios@^0.18.0:
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.18.0.tgz#32d53e4851efdc0a11993b6cd000789d70c05102"
+  dependencies:
+    follow-redirects "^1.3.0"
+    is-buffer "^1.1.5"
 
 axobject-query@^0.1.0:
   version "0.1.0"
@@ -3018,7 +3029,7 @@ flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
 
-follow-redirects@^1.0.0:
+follow-redirects@^1.0.0, follow-redirects@^1.3.0:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.5.2.tgz#5a9d80e0165957e5ef0c1210678fc5c4acb9fb03"
   dependencies:
@@ -3940,7 +3951,7 @@ isobject@^3.0.0, isobject@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
 
-isomorphic-fetch@^2.1.1:
+isomorphic-fetch@^2.1.1, isomorphic-fetch@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz#611ae1acf14f5e81f729507472819fe9733558a9"
   dependencies:
@@ -4129,6 +4140,14 @@ jest-enzyme@^6.0.2:
     enzyme-to-json "^3.3.0"
     jest-environment-enzyme "^6.0.2"
 
+jest-fetch-mock@^1.6.5:
+  version "1.6.5"
+  resolved "https://registry.yarnpkg.com/jest-fetch-mock/-/jest-fetch-mock-1.6.5.tgz#178fa1a937ef6f61fb8e8483b6d4602b17e0d96d"
+  dependencies:
+    "@types/jest" "^23.0.0"
+    isomorphic-fetch "^2.2.1"
+    promise-polyfill "^7.1.1"
+
 jest-haste-map@^20.0.4:
   version "20.0.5"
   resolved "https://registry.yarnpkg.com/jest-haste-map/-/jest-haste-map-20.0.5.tgz#abad74efb1a005974a7b6517e11010709cab9112"
@@ -4187,6 +4206,16 @@ jest-message-util@^22.4.3:
     micromatch "^2.3.11"
     slash "^1.0.0"
     stack-utils "^1.0.1"
+
+jest-mock-axios@^2.1.11:
+  version "2.1.11"
+  resolved "https://registry.yarnpkg.com/jest-mock-axios/-/jest-mock-axios-2.1.11.tgz#5261646f25d69cd034c8235e4e9683ead3bdcc74"
+  dependencies:
+    jest-mock-promise "^1.0.23"
+
+jest-mock-promise@^1.0.23:
+  version "1.0.23"
+  resolved "https://registry.yarnpkg.com/jest-mock-promise/-/jest-mock-promise-1.0.23.tgz#c921fd6b512ac546097edbcf477f3d4169657e40"
 
 jest-mock@^20.0.3:
   version "20.0.3"
@@ -5867,6 +5896,10 @@ progress@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.0.tgz#8a1be366bf8fc23db2bd23f10c6fe920b4389d1f"
 
+promise-polyfill@^7.1.1:
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-7.1.2.tgz#ab05301d8c28536301622d69227632269a70ca3b"
+
 promise@8.0.1:
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/promise/-/promise-8.0.1.tgz#e45d68b00a17647b6da711bf85ed6ed47208f450"
@@ -6533,7 +6566,7 @@ semantic-ui-css@^2.3.2:
   dependencies:
     jquery x.*
 
-semantic-ui-react@^0.81.1:
+semantic-ui-react@^0.81.3:
   version "0.81.3"
   resolved "https://registry.yarnpkg.com/semantic-ui-react/-/semantic-ui-react-0.81.3.tgz#ad98917c44cda4b316ee841d67dc071e16e93e9c"
   dependencies:

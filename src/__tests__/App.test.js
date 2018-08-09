@@ -9,3 +9,18 @@ it('renders welcome message', () => {
   const welcome = <h1>Welcome to reActivFridge</h1>;
   expect(wrapper.contains(welcome)).toEqual(true);
 });
+
+// const foo = () => {}
+//
+// <Button foo={asohdu} />
+//
+// class Button {
+// render() {
+//   <div onClick={this.props.foo1}>
+//   </div>
+// }
+// }
+//
+// Button.click()
+//
+// const findRecipes = (arg1, arg2) => {}

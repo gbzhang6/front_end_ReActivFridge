@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import YourFridge from "./YourFridge";
 import YourRecipes from "./YourRecipes";
+import getIngredients from '../services/getIngredients';
 const URL = "http://localhost:3000/api/v1/ingredients";
 const URL2 = "http://localhost:3000/api/v1/recipes/"
 
@@ -12,15 +13,14 @@ class Index extends Component {
     selectedRecipe: [],
   }
 
-  componentDidMount() {
-    fetch(URL)
-    .then(response => response.json())
-    .then(ingredients => this.setState(
+  async componentDidMount() {
+    const ingredients = await getIngredients();
+      this.setState(
       {
         ingredients
       }
     )
-  )}
+  }
 
   handleClick = (newIngredientName) => {
     this.setState({
@@ -45,8 +45,12 @@ class Index extends Component {
   }
 
   render(){
-    console.log("ingredients", this.state.ingredients)
-    const tempIngredients = this.state.ingredients.slice(0,20)
+    let tempIngredients
+    if (this.state.ingredients !== undefined){ tempIngredients = this.state.ingredients.slice(0,20)
+    } else {
+      tempIngredients = []
+    }
+
     return(
       <div className="fridge">
         <YourFridge
